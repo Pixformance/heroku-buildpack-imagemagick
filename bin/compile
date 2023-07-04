@@ -76,9 +76,6 @@ cat > $INSTALL_DIR/magic.xml <<EOF
 </magicmap>
 EOF
 
-echo "-----> Writing delegates file"
-curl http://www.imagemagick.org/source/delegates.xml > $INSTALL_DIR/delegates.xml
-
 # update PATH and LD_LIBRARY_PATH
 echo "-----> Updating environment variables"
 PROFILE_PATH="$BUILD_DIR/.profile.d/imagemagick.sh"
